@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .nav{
+        height: 150px;
+        width: 100%;
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .round{
+        height: 70px;
+        width: 70px;
+        background-color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 70px;
+    }
+    i:hover{
+        /* font-size: 40px; */
+
+        transform: scale(1.9);
+        transition: 1s;
+    }
+    .fa-facebook-f:hover{
+        color: blue;
+    }
+    .fa-twitter:hover{
+        color: lightblue;
+    }
+    .fa-instagram:hover{
+        color: pink;
+    }
+    .fa-phone-volume:hover{
+        color: red;
+    }
+    .fa-youtube:hover{
+        color: red;
+    }
+</style>
+<body>
+    
+
+    <div class="nav">
+        <div class="round"><i class="fa-brands fa-facebook-f"></i></div>
+        <div class="round"><i class="fa-brands fa-twitter"></i></div>
+        <div class="round"><i class="fa-brands fa-instagram"></i></div>
+        <div class="round"><i class="fa-solid fa-phone-volume"></i></div>
+        <div class="round"><i class="fa-brands fa-youtube"></i></div>
+    </div>
+</body>
+</html>
