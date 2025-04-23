@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: 300px;
+        width: 400px;
+        background-image: url('https://assets.telegraphindia.com/telegraph/2025/Mar/1741777888_modi.jpg');
+        background-size: cover;
+    }
+    .box::before{
+        content: '';
+        position: absolute;
+        height: 300px;
+        width: 200px;
+
+        /* background-color: red; */
+        background-image: url('https://m.economictimes.com/thumb/msid-85746693,width-1200,height-900,resizemode-4,imgsize-67092/amit-shah-3.jpg');
+        background-size: cover;
+        background-position: -100px;
+        transition: 1s;
+        opacity: 0.5;
+    }
+    .box::after{
+        content: '';
+        position: absolute;
+        height: 300px;
+        width: 200px;
+        background-image: url('https://governancenow.com/temp/yogi_adityanath.jpg');
+        background-size: cover;
+        background-position: -100px;
+        right: 872px;
+        transition: 1s;
+        opacity: 0.5;
+    }
+    .box:hover::before{
+        width: 0;
+        transition: 1s;
+    }
+    .box:hover::after{
+        width: 0;
+        transition: 1s;
+    }
+</style>
+<body>
+    <div class="box"></div>
+</body>
+</html>
